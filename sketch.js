@@ -57,7 +57,7 @@ function setup()
   knife.debug = false;
   
   //creating game over as a sprite to display when the game is over
-  gameOver = createSprite(width/2,height/2 - 110);
+  gameOver = createSprite(width/2,height/2 - 80);
   
   //code to add image to the game over
   gameOver.addImage(gameOverImage);
@@ -89,7 +89,7 @@ function setup()
   //code to make the game over invisible
   gameOver.visible = false;
   
-  restart12 = createSprite(width/2,height/2  + 10);
+  restart12 = createSprite(width/2,height/2  + 40);
   restart12.scale = 0.25;
   restart12.addImage(restartImg);
   restart12.visible = false;
@@ -149,6 +149,8 @@ function draw()
       play_button.visible = true;
       knife.visible = false;
 
+      gameOver.visible = false;
+      restart12.visible = false;
       
       choppedScore = 0;
       speedScore = 0;
@@ -1185,8 +1187,7 @@ function createOranges4()
 function reset()
 {
   gameState = START;
- gameOver.visible = false;
-  restart12.visible = false;
+ 
 }
 
 
