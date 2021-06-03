@@ -57,7 +57,7 @@ function setup()
   knife.debug = false;
   
   //creating game over as a sprite to display when the game is over
-  gameOver = createSprite(width/2,height/2 - 80);
+  gameOver = createSprite(width/2,height/2 - 50);
   
   //code to add image to the game over
   gameOver.addImage(gameOverImage);
@@ -89,7 +89,7 @@ function setup()
   //code to make the game over invisible
   gameOver.visible = false;
   
-  restart12 = createSprite(width/2,height/2  + 40);
+  restart12 = createSprite(width/2,height/2  + 70);
   restart12.scale = 0.25;
   restart12.addImage(restartImg);
   restart12.visible = false;
